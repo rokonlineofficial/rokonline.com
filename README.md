@@ -1,14 +1,14 @@
-# Welcome to your Lovable project
+# Welcome to your Rokonline project
 
-This project was built with [Lovable](https://lovable.dev).
+This project was built with [Rokonline](https://Rokonline.dev).
 
-## Build with Lovable
+## Build with Rokonline
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Open your project in the [Rokonline editor](https://Rokonline.dev) and keep building.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Ship faster**: describe what you want to build and Rokonline handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Rokonline is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Rokonline, ready for your next prompt.
 
 ## Development
 

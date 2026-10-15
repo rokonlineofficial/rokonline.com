@@ -1,0 +1,58 @@
+name: Build and publish static site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+
+      - name: Add 404 page
+        run: cp dist/client/index.html dist/client/404.html
+
+      - name: Publish to deploy branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          URL="https://x-access-token:${TOKEN}@github.com/${REPO}.git"
+          if git ls-remote --exit-code --heads "$URL" deploy >/dev/null 2>&1; then
+            git clone --branch deploy --single-branch "$URL" /tmp/deploy
+          else
+            mkdir /tmp/deploy && cd /tmp/deploy
+            git init -b deploy
+            git remote add origin "$URL"
+            cd -
+          fi
+          cd /tmp/deploy
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a "$GITHUB_WORKSPACE/dist/client/." .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to publish"
+          else
+            git commit -m "Deploy ${GITHUB_SHA::7}"
+            git push origin deploy
+          fi
