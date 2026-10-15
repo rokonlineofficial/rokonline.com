@@ -18,13 +18,13 @@ import gloriaCleaning from "@/assets/gloriaCleaning.png";
 export const company = {
   name: "Rok Online",
   legal: "Rok Online Inc.",
-  address: "Munshir Moor, Maddho Pirzabad, Badarganj Road, Rangpur, Bangladesh",
-  street: "Maddho Pirzabad",
-  city: "Rangpur",
-  state: "Bangladesh",
-  zip: "5400",
-  phone: "+880 1326-131609",
-  phoneHref: "tel:+8801326131609",
+  address: "2717 Sardis Rd, Charlotte, NC 28270",
+  street: "2717 Sardis Rd",
+  city: "Charlotte",
+  state: "NC",
+  zip: "28270",
+  phone: "(704) 412-6928",
+  phoneHref: "tel:+1 (704) 412-6928",
   email: "email@rokonline.com",
   founder: "Rokon Uz Zaman",
   tagline: "Turning Clicks Into Loyal Customers",
@@ -700,7 +700,7 @@ export const portfolioCategories = [
 export const testimonials = [
   {
     quote:
-      "I've been working with Rokon for over 4 years, and I can't recommend him highly enough. He helped us migrate our membership website to a new domain and built a complex site with multiple membership levels, a large amount of content, and custom functionality. Everything works! I was very especially happy about the design, and Rokon was patient, collaborative, and delivered a website I'm delighted with. Whenever he encountered something new, he learned it quickly and found a solution. What stands out most is his honesty, professionalism, and dedication. Even with the time difference between Bangladesh and the U.S., he was always responsive and made himself available whenever needed. Communication was excellent throughout the project.If you're looking for someone who is skilled, reliable, trustworthy, and truly cares about doing great work, I highly recommend Rokon. It's been a pleasure working with him, and I look forward to continuing our partnership.",
+      "I've been working with Rokon for over 4 years, and I can't recommend him highly enough. He helped us migrate our membership website to a new domain and built a complex site with multiple membership levels, a large amount of content, and custom functionality. Everything works! I was very especially happy about the design, and Rokon was patient, collaborative, and delivered a website I'm delighted with. Whenever he encountered something new, he learned it quickly and found a solution. What stands out most is his honesty, professionalism, and dedication. Even with the time difference between Charlotte, NC and the U.S., he was always responsive and made himself available whenever needed. Communication was excellent throughout the project.If you're looking for someone who is skilled, reliable, trustworthy, and truly cares about doing great work, I highly recommend Rokon. It's been a pleasure working with him, and I look forward to continuing our partnership.",
     name: "Ajayan Borys",
     company: "Effortless Mind Meditation",
     initials: "AB",

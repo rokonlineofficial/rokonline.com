@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Talk to Rok Online in Rangpur, Bangladesh about web development, SEO and paid ads. Call +8801326-131609 or book a free consultation.",
+          "Talk to Rok Online in Charlotte, North Carolina about web development, SEO and paid ads. Call +8801326-131609 or book a free consultation.",
       },
       { property: "og:title", content: "Contact Rok Online" },
       {

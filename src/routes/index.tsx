@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
         content:
           "Rok Online builds high-performing websites and runs SEO, Google Ads and Meta Ads campaigns that turn clicks into loyal customers. 150+ projects delivered.",
       },
-      { property: "og:title", content: "Rok Online | Digital Growth Agency Rangpur, Bangladesh" },
+      { property: "og:title", content: "Rok Online | Digital Growth Agency Charlotte, North Carolina" },
       {
         property: "og:description",
         content:
@@ -45,8 +45,8 @@ export const Route = createFileRoute("/")({
           address: {
             "@type": "PostalAddress",
             streetAddress: "Maddho Pirzabad",
-            addressLocality: "Rangpur",
-            addressRegion: "Bangladesh",
+            addressLocality: "Charlotte, NC",
+            addressRegion: "Charlotte, NC",
             postalCode: "5400",
             addressCountry: "US",
           },
