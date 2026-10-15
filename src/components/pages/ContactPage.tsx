@@ -148,7 +148,7 @@ export function ContactPage() {
             <div className="glass overflow-hidden rounded-3xl">
               <iframe
                 title="Rok Online office location map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.703409639301!2d89.20522717446146!3d25.747320009201005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e3338f7c8ddfb9%3A0xe62a8e84a913c5db!2sRok%20Online!5e0!3m2!1sen!2sbd!4v1789432895800!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/place/2717+Sardis+Rd,+Charlotte,+NC+28211/@35.154564,-80.794966,16z/data=!4m5!3m4!1s0x885420914cc51953:0xe4c8cd656585cb7a!8m2!3d35.1545638!4d-80.7949659?hl=en-GB&entry=ttu&g_ep=EgoyMDI2MTAxMi4wIKXMDSoASAFQAw%3D%3D"
                 loading="lazy"
                 className="h-72 w-full border-0 grayscale-[35%]"
                 referrerPolicy="no-referrer-when-downgrade"
